@@ -20,6 +20,7 @@ const TaskInput: React.FC = () => {
     return (
         <form onSubmit={handleSubmit(handleOnSubmit)} className="input-form">
             <div className="inner">
+                <h2>新規予定</h2>
                 <input
                     type="text"
                     name="title"
@@ -31,7 +32,7 @@ const TaskInput: React.FC = () => {
                         maxLength: { value: 200, message: 'タイトルは200文字以下で入力してください。'}
                     })}
                 />
-                <button className="btn is-primary">追加(Add)する</button>
+                <button className="btn is-primary">追加</button>
                 {
                     errors.title &&
                     <span className="error-message">{ errors.title.message }</span>

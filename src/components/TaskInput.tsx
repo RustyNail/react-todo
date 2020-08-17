@@ -19,7 +19,7 @@ const TaskInput: React.FC = () => {
 
     return (
         <form onSubmit={handleSubmit(handleOnSubmit)} className="input-form">
-            <h2>新規予定</h2><br/>
+            <h2 style="margin-left: 30px;">新規予定</h2><br/>
             <div className="inner">
                 <input
                     type="text"
